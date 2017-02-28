@@ -1,0 +1,41 @@
+name: Pineal Professional Subtheme
+type: theme
+description:  'Subtheme off of Professional Responsive'
+package: core
+core: 8.x
+version: '8.x-1.0'
+base theme: professional_responsive_theme
+project: 'pineal_professional_subtheme'
+
+
+#remove custom-style from parent theme
+stylesheets-remove:
+  - @professional_responsive_theme/css/custom-style.css
+# Override Base Theme CSS file:
+#stylesheets-override:
+#  - css/custom-style.css: css/custom-style.css
+
+# Libraries - Custom Library added - KH
+# Includes reference to local theme custom CSS file.
+libraries:
+  - pineal_professional_subtheme/global-components
+
+#Regions
+regions:
+  header: 'Header'
+  primary_menu: 'Primary Menu'
+  slideshow: 'Slideshow'  
+  topwidget_first: 'Top First Widget'
+  topwidget_second: 'Top Second Widget'
+  topwidget_third: 'Top Third Widget' 
+  highlighted: 'Highlighted' 
+  page_title: 'Page Title'
+  breadcrumb: 'Breadcrumb'
+  content: 'Content'
+  sidebar_first: 'Left Sidebar'
+  sidebar_second: 'Right Sidebar' 
+  footer_first: 'Footer First Widget'
+  footer_second: 'Footer Second Widget'
+  footer_third: 'Footer Third Widget'
+  footer_menu: 'Footer Menu'
+  auto_hidden_block: 'Auto hidden blocks'
