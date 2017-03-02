@@ -8,17 +8,22 @@ base theme: professional_responsive_theme
 project: 'pineal_professional_subtheme'
 
 
+libraries-override:
+  professional_responsive_theme/global-components:
+    css:
+      theme:
+#       css/custom-style.css: false  # to simply remove the original custom-style.css sheet
+        css/custom-style.css: css/custom-style.css
+
 #remove custom-style from parent theme
-stylesheets-remove:
-  - @professional_responsive_theme/css/custom-style.css
+#stylesheets-remove:
+#  - @professional_responsive_theme/css/custom-style.css
 # Override Base Theme CSS file:
-#stylesheets-override:
-#  - css/custom-style.css: css/custom-style.css
 
 # Libraries - Custom Library added - KH
 # Includes reference to local theme custom CSS file.
-libraries:
-  - pineal_professional_subtheme/global-components
+#libraries:
+#  - pineal_professional_subtheme/global-components
 
 #Regions
 regions:
